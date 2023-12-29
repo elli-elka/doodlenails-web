@@ -1,0 +1,27 @@
+body{
+    margin: 0;
+}
+
+.photo{
+    position: relative;
+    height: 100vh;
+}
+
+.content{
+    display: flex;
+    align-items: center;
+    position:-webkit-sticky;
+    height: 100%;
+    width: 100%;
+}
+
+.content span.img-txt{
+    text-transform: uppercase;
+    background-color: #333;
+    color: #fff;
+    padding: 1.2rem;
+    font-size: 1.2rem;
+    letter-spacing: 20px;
+    align-items: center;
+
+}
