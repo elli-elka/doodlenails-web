@@ -1,15 +1,18 @@
 import { Route, Routes } from "react-router-dom";
 import Navigation from "./components/Navigation";
 import Home from "./pages/Home";
-import About from "./pages/About";
+import About from "./pages/nailCovers";
+import './App.css'
+import Header from "./components/Header";
 
 function App() {
   return (
+
     <>
-      <Navigation />
+      <Header />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
+        <Route path="/nailCovers" element={<nailCovers />} />
       </Routes>
       
     </>
