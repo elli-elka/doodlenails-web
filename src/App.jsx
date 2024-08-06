@@ -1,7 +1,7 @@
 import { Route, Routes } from "react-router-dom";
 import Navigation from "./components/Navigation";
 import Home from "./pages/Home";
-import About from "./pages/nailCovers";
+import nailCovers from "./pages/nailCovers";
 import './App.css'
 import Header from "./components/Header";
 
