@@ -1,19 +1,20 @@
-*{
-  
+* {
+
 }
 
 .nav-link {
-color: black;
+  color: black;
 }
 
-.a {
-
+.ul {
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
   font-size: 17px;
+  flex:1 1 200px;
 }
 
-.nav-link:hover{
+.nav-link:hover {
   color: black;
-text-decoration: underline;}
+  text-decoration: underline;
+}

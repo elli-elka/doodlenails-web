@@ -1,7 +1,9 @@
 import React from "react";
 
-function nailCovers() {
-  return (<h1>hello world!</h1>);
+function NailCovers() {
+  return(
+   <h1>Hello world!</h1>
+  )
 }
 
-export default nailCovers;
+export default NailCovers;
