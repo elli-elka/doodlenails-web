@@ -53,10 +53,6 @@ export const menuItemsData = [
         ],
       },
       {
-        title: "Hair",
-        url: "/hair",
-        submenu: [
-      {
         title: "Nails",
         submenu: [
           {
@@ -115,7 +111,6 @@ export const menuItemsData = [
     title: "Search",
     url: "/search",
   },
-},
 ];
 
 
@@ -145,4 +140,4 @@ export const menuItemsData = [
 //         ],
 //       },
 //     ],
-//   }]
+//   ]
