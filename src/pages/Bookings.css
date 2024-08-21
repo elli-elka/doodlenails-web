@@ -1,0 +1,21 @@
+
+
+.bookings-page {
+    text-align: center;
+    margin-top: 250px;
+    font-size: 60px;
+    background-image: 
+}
+
+
+
+
+
+.private, .session {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color:black;
+}
+
+.private:hover, .session:hover{
+    color: grey;
+}

@@ -4,6 +4,7 @@ import Home from "./pages/Home";
 import NailCovers from "./pages/NailCovers";
 import './App.css'
 import Header from "./components/Header";
+import Bookings from "./pages/Bookings";
 
 function App() {
   return (
@@ -11,7 +12,8 @@ function App() {
     <Header/>
       <Routes>
         <Route path="/*" element={<Home />} />
-        <Route path="/NailCovers" element={<NailCovers />} />
+        <Route path="/NailCovers" element={<NailCovers/>} />
+        <Route path="/bookings" element={<Bookings />}/>
       </Routes>
       
     </>

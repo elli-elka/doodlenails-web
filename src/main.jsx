@@ -22,6 +22,7 @@ import Root from "./routes/Root";
 import ErrorPage from "./routes/error-page";
 import Home from "./pages/Home";
 import NailCovers from "./pages/NailCovers";
+import Bookings from "./pages/Bookings";
 
 const router = createBrowserRouter([
   {
@@ -35,6 +36,10 @@ const router = createBrowserRouter([
       {
         path: "NailCovers",
         element: <NailCovers />,
+      },
+      {
+        path: "Bookings",
+        element: <Bookings />,
       },
       {
         path: "*",

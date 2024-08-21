@@ -2,6 +2,10 @@
   display: none;
 }
 
+.desktop-nav{
+  text-align: right;
+}
+
 .nav-link {
   color: black;
 }
@@ -16,5 +20,5 @@
 
 .nav-link:hover {
   color: black;
-  text-decoration: underline;
+  
 }

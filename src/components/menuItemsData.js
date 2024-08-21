@@ -53,7 +53,7 @@ export const menuItemsData = [
         ],
       },
       {
-        title: "Nails",
+        title: "Hair",
         submenu: [
           {
             title: "Covers",
