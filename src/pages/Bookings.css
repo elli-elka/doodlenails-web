@@ -1,21 +1,28 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
 
+body{
 
+}
 .bookings-page {
-    text-align: center;
-    margin-top: 250px;
-    font-size: 60px;
-    background-image: 
+  text-align: center;
+  margin-top: 250px;
+  
+  font-size: 60px;
+  background-image:url('http://www.doodlenails.com/main/blog/wp-content/uploads/2023/07/cropped-09.11.22-Julia-Nails-Shoot0034.jpg');
+    opacity: 50%;
+    background-repeat: no-repeat;
+  
 }
 
-
-
-
-
-.private, .session {
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    color:black;
+.private,
+.session {
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+    font-style: normal;
+  color: black;
 }
 
-.private:hover, .session:hover{
-    color: grey;
+.private:hover,
+.session:hover {
+  color: black;
 }

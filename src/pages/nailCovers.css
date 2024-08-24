@@ -1,5 +1,30 @@
-.box-element{
+/* .box-masonry {
     display: block;
     margin-left: 50px;
+    margin: 0 auto;
     margin-right: 50px;
+    --masonry-gap: 50px;
+    --masonry-brick-width: 200px;
 }
+
+*/
+
+body{
+    /* Full height */
+    height: 100%;
+  
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+.images-nails{
+
+        max-width: 100%;
+        height: auto;
+        padding: 0;
+        margin: 0;
+
+} 

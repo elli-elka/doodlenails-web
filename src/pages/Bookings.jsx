@@ -4,6 +4,7 @@ import "./Bookings.css";
 function Bookings() {
   return (
     <div className="bookings-page">
+      
       <a className="session" href="/session-work">SESSION WORK</a>
       <br/>
       <br/>

@@ -1,14 +1,19 @@
 
 import * as React from 'react';
+import "./NailCovers.css";
 import Box from '@mui/material/Box';
 import Paper from '@mui/material/Paper';
 import Masonry from '@mui/lab/Masonry';
 import { styled } from '@mui/material/styles';
+import { borders } from '@mui/system';
+import ImageList from '@mui/material/ImageList';
+import ImageListItem from '@mui/material/ImageListItem';
+
 
 const Label = styled(Paper)(({ theme }) => ({
   backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#fff',
   ...theme.typography.body2,
-  padding: theme.spacing(0.5),
+  padding: theme.spacing(9),
   textAlign: 'center',
   color: theme.palette.text.secondary,
   borderBottomLeftRadius: 0,
@@ -17,97 +22,118 @@ const Label = styled(Paper)(({ theme }) => ({
 
 export default function NailCovers() {
   return (
-    <Box sx={{ width: 500, minHeight: 829}}>
-      <Masonry columns={3} spacing={2}>
-        {itemData.map((item, index) => (
-          <div classname="box-element" key={index}>
+//     <Box sx={{ width: '100%', minHeight: '100%'}}>
+//       <Masonry className= "box-masonry" columns={2} spacing={6}>
+//         {itemData.map((item, index) => (
+//           <div className="box-element" key={index}>
+//             <img className="images-nails"
+//               srcSet={`${item.img}?w=50&auto=format&dpr=2 2x`}
+//               src={`${item.img}?w=50&auto=format`}
+//               alt={item.title}
+//               loading="lazy"
+//               style={{
+//                 borderBottomLeftRadius: 4,
+//                 borderBottomRightRadius: 4,
+//                 display: 'block',
+//                 height: "90%", width: "90%"
             
+//               }}
+              
+//             />
+//           </div>
+//         ))}
+//       </Masonry>
+//     </Box>
+//   );
+// }
+
+<Box sx={{ width: '100%', height: '100%', overflowY: 'scroll' }}>
+      <ImageList variant="masonry" cols={3} gap={8}>
+        {itemData.map((item) => (
+          <ImageListItem key={item.img}>
             <img
-              srcSet={`${item.img}?w=162&auto=format&dpr=2 2x`}
-              src={`${item.img}?w=162&auto=format`}
+              srcSet={`${item.img}?w=248&fit=crop&auto=format&dpr=2 2x`}
+              src={`${item.img}?w=248&fit=crop&auto=format`}
               alt={item.title}
               loading="lazy"
-              style={{
-                borderBottomLeftRadius: 4,
-                borderBottomRightRadius: 4,
-                display: 'block',
-                width: '100%',
-              }}
             />
-          </div>
+          </ImageListItem>
         ))}
-      </Masonry>
+      </ImageList>
     </Box>
   );
 }
 
+
+
+
 const itemData = [
   {
-    img: 'https://images.unsplash.com/photo-1518756131217-31eb79b20e8f',
+    img: 'http://www.doodlenails.com/main/blog/wp-content/uploads/2024/08/photo_2024-08-15_19-35-59.jpg',
     title: 'Fern',
   },
   {
-    img: 'https://images.unsplash.com/photo-1627308595229-7830a5c91f9f',
+    img: 'http://www.doodlenails.com/main/blog/wp-content/uploads/2024/08/photo_2024-08-15_19-35-59-2.jpg',
     title: 'Snacks',
   },
   {
-    img: 'https://images.unsplash.com/photo-1597645587822-e99fa5d45d25',
+    img: 'http://www.doodlenails.com/main/blog/wp-content/uploads/2024/08/The-Silk-Road-Issue-12-14.jpg',
     title: 'Mushrooms',
   },
   {
-    img: 'https://images.unsplash.com/photo-1529655683826-aba9b3e77383',
+    img: 'http://www.doodlenails.com/main/blog/wp-content/uploads/2024/08/The-Silk-Road-Issue-12-13.jpg',
     title: 'Tower',
   },
   {
-    img: 'https://images.unsplash.com/photo-1471357674240-e1a485acb3e1',
+    img: 'http://www.doodlenails.com/main/blog/wp-content/uploads/2024/08/The-Silk-Road-Issue-12-Je.jpg',
     title: 'Sea star',
   },
   {
-    img: 'https://images.unsplash.com/photo-1558642452-9d2a7deb7f62',
+    img: 'http://www.doodlenails.com/main/blog/wp-content/uploads/2024/08/The-Silk-Road-Issue-12-25.jpg',
     title: 'Honey',
   },
   {
-    img: 'https://images.unsplash.com/photo-1516802273409-68526ee1bdd6',
+    img: 'http://www.doodlenails.com/main/blog/wp-content/uploads/2024/08/The-Silk-Road-Issue-12-24.jpg',
     title: 'Basketball',
   },
   {
-    img: 'https://images.unsplash.com/photo-1551963831-b3b1ca40c98e',
+    img: 'http://www.doodlenails.com/main/blog/wp-content/uploads/2019/12/sisterhood4.jpg',
     title: 'Breakfast',
   },
   {
-    img: 'https://images.unsplash.com/photo-1627328715728-7bcc1b5db87d',
+    img: 'http://www.doodlenails.com/main/blog/wp-content/uploads/2019/12/sisterhood2.jpg',
     title: 'Tree',
   },
   {
-    img: 'https://images.unsplash.com/photo-1551782450-a2132b4ba21d',
+    img: 'http://www.doodlenails.com/main/blog/wp-content/uploads/2019/12/sisterhood1.jpg',
     title: 'Burger',
   },
   {
-    img: 'https://images.unsplash.com/photo-1522770179533-24471fcdba45',
+    img: 'http://www.doodlenails.com/main/blog/wp-content/uploads/2019/12/Egle-Vasi_-FFP_red_10-scaled.jpg',
     title: 'Camera',
   },
   {
-    img: 'https://images.unsplash.com/photo-1444418776041-9c7e33cc5a9c',
+    img: 'http://www.doodlenails.com/main/blog/wp-content/uploads/2019/12/Egle-Vasi_-FFP_red_6-scaled.jpg',
     title: 'Coffee',
   },
   {
-    img: 'https://images.unsplash.com/photo-1627000086207-76eabf23aa2e',
+    img: 'http://www.doodlenails.com/main/blog/wp-content/uploads/2019/12/Egle-Vasi_-FFP_red_3-scaled.jpg',
     title: 'Camping Car',
   },
   {
-    img: 'https://images.unsplash.com/photo-1533827432537-70133748f5c8',
+    img: 'http://www.doodlenails.com/main/blog/wp-content/uploads/2023/08/6378d9cc523c290d44143228_0-11.jpg',
     title: 'Hats',
   },
   {
-    img: 'https://images.unsplash.com/photo-1567306301408-9b74779a11af',
+    img: 'http://www.doodlenails.com/main/blog/wp-content/uploads/2023/08/387_Senses_1945r2c-2-scaled.jpg',
     title: 'Tomato basil',
   },
   {
-    img: 'https://images.unsplash.com/photo-1627328561499-a3584d4ee4f7',
+    img: 'http://www.doodlenails.com/main/blog/wp-content/uploads/2023/08/278864297_4668348156610243_5561578004087023101_n-scaled.jpg',
     title: 'Mountain',
   },
   {
-    img: 'https://images.unsplash.com/photo-1589118949245-7d38baf380d6',
+    img: 'http://www.doodlenails.com/main/blog/wp-content/uploads/2023/08/ClaireH_041021_-001r1-2-scaled.jpg',
     title: 'Bike',
   },
 ];
